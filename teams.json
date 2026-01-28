@@ -1,0 +1,226 @@
+[
+  {
+    "team": "Cincinnati Bengals",
+    "ovr": "81",
+    "tier": "C",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Buffalo Bills",
+    "ovr": "88",
+    "tier": "A",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Denver Broncos",
+    "ovr": "91",
+    "tier": "S",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Cleveland Browns",
+    "ovr": "81",
+    "tier": "C",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Tampa Bay Buccaneers",
+    "ovr": "83",
+    "tier": "B",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Arizona Cardinals",
+    "ovr": "80",
+    "tier": "C",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Los Angeles Chargers",
+    "ovr": "82",
+    "tier": "C",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Kansas City Chiefs",
+    "ovr": "85",
+    "tier": "B",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Indianapolis Colts",
+    "ovr": "82",
+    "tier": "C",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Washington Commanders",
+    "ovr": "79",
+    "tier": "D",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Dallas Cowboys",
+    "ovr": "81",
+    "tier": "C",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Miami Dolphins",
+    "ovr": "79",
+    "tier": "D",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Philadelphia Eagles",
+    "ovr": "80",
+    "tier": "C",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Atlanta Falcons",
+    "ovr": "80",
+    "tier": "C",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "San Francisco 49ers",
+    "ovr": "84",
+    "tier": "B",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "New York Giants",
+    "ovr": "78",
+    "tier": "D",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Jacksonville Jaguars",
+    "ovr": "84",
+    "tier": "B",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "New York Jets",
+    "ovr": "74",
+    "tier": "D",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Detroit Lions",
+    "ovr": "87",
+    "tier": "A",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Green Bay Packers",
+    "ovr": "83",
+    "tier": "B",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Carolina Panthers",
+    "ovr": "80",
+    "tier": "C",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "New England Patriots",
+    "ovr": "86",
+    "tier": "A",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Las Vegas Raiders",
+    "ovr": "76",
+    "tier": "D",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Los Angeles Rams",
+    "ovr": "89",
+    "tier": "S",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Baltimore Ravens",
+    "ovr": "87",
+    "tier": "A",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "New Orleans Saints",
+    "ovr": "77",
+    "tier": "D",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Seattle Seahawks",
+    "ovr": "85",
+    "tier": "B",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Pittsburgh Steelers",
+    "ovr": "84",
+    "tier": "B",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Houston Texans",
+    "ovr": "86",
+    "tier": "A",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Tennessee Titans",
+    "ovr": "75",
+    "tier": "D",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Minnesota Vikings",
+    "ovr": "85",
+    "tier": "B",
+    "status": "Open",
+    "owner": ""
+  },
+  {
+    "team": "Chicago Bears",
+    "ovr": "84",
+    "tier": "B",
+    "status": "Open",
+    "owner": ""
+  }
+]

@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MML26 — Madden Money League</title>
+  <meta name="description" content="MML26 — a long-term, realism-first Madden 26 CFM with tier-based admission, deposits, and payouts." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top" aria-label="MML26 home">
+      <img src="assets/logo.png" alt="MML26 logo" />
+      <div class="title">
+        <strong id="leagueName">MML26 — Madden Money League</strong>
+        <span>Competitive • Realistic Cap • 72hr Advance</span>
+      </div>
+    </a>
+
+    <nav class="nav-links">
+      <a class="chip" href="#tiers">Tiers</a>
+      <a class="chip" href="#payouts">Payouts</a>
+      <a class="chip" href="#teams">Teams</a>
+      <a class="chip" href="#signup">Sign Up</a>
+      <a class="chip" href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="card">
+        <div class="card-pad">
+          <div class="kicker">
+            <span class="pill">32 Teams</span>
+            <span class="pill">Multi‑Season</span>
+            <span class="pill">Realism‑First</span>
+          </div>
+
+          <h1 class="h1">A money league that runs clean — for seasons, not weeks.</h1>
+          <p class="sub">
+            <b>Start:</b> <span id="startDate"></span> • <b>Advance:</b> <span id="advanceCadence"></span><br/>
+            Competitive mode, 6‑minute quarters, coaches enabled, realistic salary cap, strict scheduling, and tracked trades.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn orange" id="cashappLink" href="#" target="_blank" rel="noopener noreferrer">
+              Pay Deposit (Cash App)
+              <span id="cashappTag" style="font-weight:900"></span>
+            </a>
+            <a class="btn secondary" id="discordLink" href="#" target="_blank" rel="noopener noreferrer">
+              Join Discord
+            </a>
+            <a class="btn" href="#signup">Lock Your Spot</a>
+          </div>
+
+          <div class="hr"></div>
+
+          <div class="grid-2" id="quickFacts"></div>
+
+          <div class="section" style="margin-top:14px">
+            <h2>What makes MML26 different</h2>
+            <p>
+              We keep it structured: clear tiers, deposits to lock teams, documented rulings, and a schedule system that prevents
+              “ghost leagues.” You don’t need the entire playbook here — just enough to know this league is serious.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <div class="card-pad">
+          <h2 style="margin-top:0">Quick Requirements</h2>
+          <div class="metric">
+            <b>Discord required</b>
+            <span>Scheduling, approvals, and rulings live here.</span>
+          </div>
+          <div class="metric" style="margin-top:10px">
+            <b>Deposit to claim</b>
+            <span>50% deposit locks your team and your spot.</span>
+          </div>
+          <div class="metric" style="margin-top:10px">
+            <b>No quit culture</b>
+            <span>Strikes → probation → replacement if needed.</span>
+          </div>
+
+          <div class="hr"></div>
+
+          <div class="note">
+            <b>Heads‑up:</b> Tiers are based on the <b>Current Official Roster Update</b>. Staff posts a
+            <b>Tier Snapshot</b> before Week 1, then tiers lock for the season.
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- TIERS -->
+  <section class="section">
+    <div class="container">
+      <div class="card">
+        <div class="card-pad" id="tiers">
+          <h2>Tier Admission (All‑In) + Trade Limits</h2>
+          <p>
+            Admission totals already include ops. Each tier also has a trade limit so roster advantage doesn’t turn into a trade‑spam advantage.
+          </p>
+
+          <div style="height:12px"></div>
+
+          <table class="table" aria-label="Tier admissions table">
+            <thead>
+              <tr>
+                <th>Tier</th>
+                <th>OVR Range</th>
+                <th>All‑In Total</th>
+                <th>50% Deposit</th>
+                <th>Trades / Season</th>
+              </tr>
+            </thead>
+            <tbody id="tiersBody"></tbody>
+          </table>
+
+          <div class="hr"></div>
+
+          <div class="small">
+            Tier Snapshot: Staff records official team OVRs before Week 1 and posts the final tier list for the season.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAYOUTS -->
+  <section class="section" id="payouts">
+    <div class="container">
+      <div class="card">
+        <div class="card-pad">
+          <h2>Payout Highlights</h2>
+          <p>We pay winners. Enough detail to show it’s real — not enough to copy the entire operating model.</p>
+          <div style="height:12px"></div>
+          <div class="grid-2" id="payoutGrid"></div>
+
+          <div class="hr"></div>
+          <div class="split">
+            <div class="metric">
+              <b>Playoffs: non‑physical upgrades</b>
+              <span>Postseason “monster game” upgrades are non‑physical and capped (max +4).</span>
+            </div>
+            <div class="metric">
+              <b>Lottery teams still matter</b>
+              <span>Anti‑tank incentives keep bottom teams competing for next season.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAMS AVAILABLE -->
+  <section class="section" id="teams">
+    <div class="container">
+      <div class="card">
+        <div class="card-pad">
+          <h2>Teams Available</h2>
+          <p>Live list (easy): edit <b>teams.json</b> in your repo. Optional: connect a published Google Sheet CSV.</p>
+
+          <div style="height:12px"></div>
+
+          <div class="split">
+            <div class="field">
+              <label for="teamSearch">Search team/owner</label>
+              <input id="teamSearch" placeholder="Search: Bengals, Rams, etc." />
+            </div>
+            <div class="grid-2">
+              <div class="field">
+                <label for="tierFilter">Filter tier</label>
+                <select id="tierFilter">
+                  <option value="ALL">All tiers</option>
+                  <option value="S">Tier S</option>
+                  <option value="A">Tier A</option>
+                  <option value="B">Tier B</option>
+                  <option value="C">Tier C</option>
+                  <option value="D">Tier D</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="statusFilter">Filter status</label>
+                <select id="statusFilter">
+                  <option value="ALL">All</option>
+                  <option value="Open">Open</option>
+                  <option value="Taken">Taken</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div style="height:10px"></div>
+          <div class="small" id="teamsCount">Loading…</div>
+          <div style="height:10px"></div>
+
+          <table class="table" aria-label="Teams availability table">
+            <thead>
+              <tr>
+                <th>Team</th>
+                <th>OVR</th>
+                <th>Tier</th>
+                <th>Status</th>
+                <th>Owner</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="teamsBody"></tbody>
+          </table>
+
+          <div class="hr"></div>
+
+          <div class="small">
+            “Pick” only selects the team in the signup form. Teams lock after deposit + staff confirmation in the Discord ledger.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNUP -->
+  <section class="section" id="signup">
+    <div class="container">
+      <div class="card">
+        <div class="card-pad">
+          <h2>Sign Up (Fast)</h2>
+          <p>Fill this out → it generates your signup message + your required Cash App note.</p>
+
+          <div style="height:12px"></div>
+
+          <div class="split">
+            <form class="form" id="signupForm">
+              <div class="field">
+                <label for="signupTeam">Team you want</label>
+                <input id="signupTeam" placeholder="Example: Los Angeles Rams" required />
+              </div>
+
+              <div class="field">
+                <label for="signupTier">Tier (based on Tier Snapshot)</label>
+                <select id="signupTier" required>
+                  <option value="">Select Tier</option>
+                  <option value="S">Tier S</option>
+                  <option value="A">Tier A</option>
+                  <option value="B">Tier B</option>
+                  <option value="C">Tier C</option>
+                  <option value="D">Tier D</option>
+                </select>
+              </div>
+
+              <div class="grid-2">
+                <div class="field">
+                  <label for="signupGT">Gamertag</label>
+                  <input id="signupGT" placeholder="Example: Yk Xj LTM" required />
+                </div>
+                <div class="field">
+                  <label for="signupDiscord">Discord name</label>
+                  <input id="signupDiscord" placeholder="Example: ykxjltm" required />
+                </div>
+              </div>
+
+              <div class="grid-2">
+                <div class="field">
+                  <label for="signupTZ">Timezone</label>
+                  <input id="signupTZ" placeholder="ET / CT / MT / PT" required />
+                </div>
+                <div class="field">
+                  <label for="signupAvail">Typical availability</label>
+                  <input id="signupAvail" placeholder="Example: Weeknights 7–11pm ET" />
+                </div>
+              </div>
+
+              <div class="cta-row">
+                <button class="btn" type="submit">Generate + Copy Signup</button>
+                <button class="btn secondary" type="button" id="btnCopyNote">Copy Cash App Note</button>
+              </div>
+
+              <div class="cta-row">
+                <button class="btn orange" type="button" id="btnCashApp">Open Cash App</button>
+                <button class="btn secondary" type="button" id="btnDiscord">Open Discord</button>
+              </div>
+
+              <div class="small">
+                Deposit is required to claim and lock a team. Use the note format exactly so staff can verify fast.
+              </div>
+            </form>
+
+            <div class="field">
+              <label for="signupOutput">Your signup message (auto-copied)</label>
+              <textarea id="signupOutput" placeholder="Your generated signup message will appear here…"></textarea>
+              <div class="small" style="margin-top:10px">
+                Paste this into Discord when you join. Staff will mark you Paid ✅ and lock your team after verifying the note.
+              </div>
+              <div class="hr"></div>
+              <div class="note">
+                <b>Tip:</b> If your Discord invite isn’t set yet, edit <b>script.js</b> and paste your invite into
+                <b>CONFIG.DISCORD_INVITE_URL</b>.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="card">
+        <div class="card-pad">
+          <h2>FAQ</h2>
+          <div class="grid-2" id="faq"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="small">
+        © <span id="year"></span> MML26. This site is informational. Final tiers/policies are enforced by staff and the official Rulebook.
+      </div>
+    </div>
+  </footer>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
